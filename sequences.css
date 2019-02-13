@@ -27,7 +27,7 @@ body {
   padding: 10px 0 0 3px;
 }
 
-#sequence text, #legend text {
+#sequence text, #legend2 text {
   font-weight: 800;
   fill: #fff;
 }
@@ -42,14 +42,14 @@ body {
 
 #explanation {
   position: absolute;
-  top: 380px;
-  left: 420px;
+  top: 360px;
+  left: 430px;
   width: 140px;
   text-align: center;
   color: #666;
   z-index: -1;
 }
 
-#percentage {
+#percentage2 {
   font-size: 2.5em;
 }
