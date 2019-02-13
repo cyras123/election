@@ -8,6 +8,17 @@ var b = {
   w: 150, h: 30, s: 3, t: 10
 };
 
+var lcolors = {
+  "Pradesh_1": "#5687d1",
+  "Pradesh_2": "#7b615c",
+  "Pradesh_3": "#de783b",
+  "Pradesh_4": "#6ab975",
+  "Pradesh_5": "#a173d1",
+  "Pradesh_6": "#bb3bbb",
+  "Pradesh_7": "#bbb27b"
+}
+
+
 // Mapping of step names to colors.
 var colors = {
  '0': '#5e5fb1',
@@ -287,10 +298,10 @@ function drawLegend() {
 
   var legend = d3.select("#legend").append("svg:svg")
       .attr("width", li.w)
-      .attr("height", d3.keys(colors).length * (li.h + li.s));
+      .attr("height", d3.keys(lcolors).length * (li.h + li.s));
 
   var g = legend.selectAll("g")
-      .data(d3.entries(colors))
+      .data(d3.entries(lcolors))
       .enter().append("svg:g")
       .attr("transform", function(d, i) {
               return "translate(0," + i * (li.h + li.s) + ")";
